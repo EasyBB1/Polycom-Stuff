@@ -1,3 +1,3 @@
 # Polycom-Stuff
 
-Home for scripts that work with Polycom phones.
+This is the home for scripts that work with Polycom phones.
