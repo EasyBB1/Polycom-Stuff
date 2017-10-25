@@ -19,6 +19,7 @@
       // Fill in your State and City below; string must be within the quotes.
          $state = 'ACT';
          $city = 'Canberra Central';
+         $fcdays = 4; 
 
             /****************************************/
             /* DO NOT EDIT ANYTHING BELOW THIS LINE */
@@ -105,11 +106,11 @@
             array_unshift($max_ar, '- °C');
          }
          
-         // Now let's output the html
-         echo 'Weather: '. $city . ' ,' . $state . '<br />';
+         // Generate html to display
+         echo 'Weather: '. $city . ', ' . $state . '<br />';
          echo 'Current: ' . $cur_temp.' @ '. $reading_at .'<br />';
          //echo 'Day : Outlook  | Temp-Min / Max  <br />';
-         for ($i = 0; $i <= 3; $i ++)
+         for ($i = 0; $i <= $fcdays - 1; $i ++)
          {
             echo $dates_ar[$i].': '.$fc_ar[$i].' | '.$min_ar[$i].' / '.$max_ar[$i].'<br />';
          }
