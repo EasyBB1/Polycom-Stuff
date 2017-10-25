@@ -19,7 +19,7 @@
       // Fill in your State and City below; string must be within the quotes.
          $state = 'ACT';
          $city = 'Canberra Central';
-         $fcdays = 4; 
+         $fcdays = 4; // Max Forecast Days- depends on the size of device screen.
 
             /****************************************/
             /* DO NOT EDIT ANYTHING BELOW THIS LINE */
