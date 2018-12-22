@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
    <head>
-      <meta charset="UTF-8">
+      <meta charset="UTF-8"></meta>
       <title></title>
    </head>
    <body>
