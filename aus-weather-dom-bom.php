@@ -85,6 +85,15 @@
          {
             $fc_ar[] = trim($fc->getAttribute('alt'));
          }
+	 
+	 // Dirty and unreliable fix for missing forecast
+	 if (count($fc_ar) < $fcdays)
+         {
+            for ($i = 0; $i <= $fcdays; $i++) {
+               $fc_ar[] = 'Unknown';
+               if(count($fc_ar) == $fcdays){ break; }
+            }
+         }
          
          // Get minimum temperature for forecast days
          $query_min = '//dl[@class="forecast-summary"]/dd[@class="min"]';
